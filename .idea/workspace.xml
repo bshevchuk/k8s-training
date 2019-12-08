@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98cf6c4a-7596-4901-92ed-f5dbf01c2a2c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-account.json.enc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complex/k8s/ingress-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/complex/k8s/ingress-service.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +14,20 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileColors">
     <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
@@ -43,6 +59,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -62,6 +80,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
@@ -145,7 +168,7 @@
       <workItem from="1575208426875" duration="5032000" />
       <workItem from="1575235888433" duration="649000" />
       <workItem from="1575286086977" duration="12063000" />
-      <workItem from="1575724827137" duration="4115000" />
+      <workItem from="1575724827137" duration="10083000" />
     </task>
     <task id="LOCAL-00001" summary="Kubernetes">
       <created>1575366975991</created>
@@ -154,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575366975991</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix ingress-service.yaml">
+      <created>1575734302511</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575734302511</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,10 +204,16 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Kubernetes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kubernetes" />
+    <MESSAGE value="Fix ingress-service.yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix ingress-service.yaml" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575743629339">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1575743629339" />
     <state x="387" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575307718325">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -186,21 +222,29 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="343" y="224" width="968" height="676" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1440.900@0.0.1440.900" timestamp="1575308506749" />
-    <state x="303" y="51" key="CommitChangelistDialog2" timestamp="1575366975439">
+    <state x="303" y="51" key="CommitChangelistDialog2" timestamp="1575734302041">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="303" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1575366975439" />
+    <state x="303" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1575734302041" />
+    <state x="539" y="168" key="RollbackChangesDialog" timestamp="1575746431704">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="539" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1575746431704" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1575308486990">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1575308486990" />
-    <state x="378" y="212" width="683" height="476" key="find.popup" timestamp="1575727558235">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1575748251104">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="378" y="212" width="683" height="476" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1575727558235" />
-    <state x="384" y="111" width="672" height="676" key="search.everywhere.popup" timestamp="1575726509711">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1575748251104" />
+    <state x="378" y="212" width="683" height="476" key="find.popup" timestamp="1575751629643">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="384" y="111" width="672" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1575726509711" />
+    <state x="378" y="212" width="683" height="476" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1575751629643" />
+    <state x="384" y="111" width="672" height="676" key="search.everywhere.popup" timestamp="1575751616474">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="384" y="111" width="672" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1575751616474" />
   </component>
 </project>
