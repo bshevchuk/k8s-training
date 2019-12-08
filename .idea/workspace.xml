@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98cf6c4a-7596-4901-92ed-f5dbf01c2a2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-account.json.enc" afterDir="false" />
+    <list default="true" id="98cf6c4a-7596-4901-92ed-f5dbf01c2a2c" name="Default Changelist" comment="Add .travis.yml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complex/k8s/client-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/complex/k8s/client-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complex/k8s/server-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/complex/k8s/server-deployment.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +42,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -168,7 +172,8 @@
       <workItem from="1575208426875" duration="5032000" />
       <workItem from="1575235888433" duration="649000" />
       <workItem from="1575286086977" duration="12063000" />
-      <workItem from="1575724827137" duration="10083000" />
+      <workItem from="1575724827137" duration="13063000" />
+      <workItem from="1575820311720" duration="3751000" />
     </task>
     <task id="LOCAL-00001" summary="Kubernetes">
       <created>1575366975991</created>
@@ -184,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575734302511</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add .travis.yml">
+      <created>1575756711916</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575756711918</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +219,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Kubernetes" />
     <MESSAGE value="Fix ingress-service.yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix ingress-service.yaml" />
+    <MESSAGE value="Add .travis.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .travis.yml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575743629339">
@@ -222,10 +235,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="343" y="224" width="968" height="676" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1440.900@0.0.1440.900" timestamp="1575308506749" />
-    <state x="303" y="51" key="CommitChangelistDialog2" timestamp="1575734302041">
+    <state x="303" y="51" key="CommitChangelistDialog2" timestamp="1575832564541">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="303" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1575734302041" />
+    <state x="303" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1575832564541" />
     <state x="539" y="168" key="RollbackChangesDialog" timestamp="1575746431704">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -234,17 +247,17 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1575308486990" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1575748251104">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1575827002214">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1575748251104" />
-    <state x="378" y="212" width="683" height="476" key="find.popup" timestamp="1575751629643">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1575827002214" />
+    <state x="378" y="212" width="683" height="476" key="find.popup" timestamp="1575832538428">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="378" y="212" width="683" height="476" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1575751629643" />
-    <state x="384" y="111" width="672" height="676" key="search.everywhere.popup" timestamp="1575751616474">
+    <state x="378" y="212" width="683" height="476" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1575832538428" />
+    <state x="384" y="111" width="672" height="676" key="search.everywhere.popup" timestamp="1575826689182">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="384" y="111" width="672" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1575751616474" />
+    <state x="384" y="111" width="672" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1575826689182" />
   </component>
 </project>
